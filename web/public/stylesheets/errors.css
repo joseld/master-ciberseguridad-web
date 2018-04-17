@@ -1,0 +1,46 @@
+html, body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-color: #353540;
+    font-family: 'Open Sans', verdana, sans-serif;
+}
+
+.content .external-error {
+	margin:auto;
+	margin-top:100px;
+	height:400px;
+	color:#F4F4F4;
+	font-weight:100;
+	text-align:center;
+	text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+
+.content .external-error h1 {
+    font-size: 66px;
+    margin-bottom: 0px;
+}
+
+.content .external-error img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 180px;
+}
+
+.content img {
+    display: none;
+}
+
+.content .external-error span {
+	font-size:	32px;
+	margin-bottom:10px;
+}
+
+.content .external-error span + p {
+    width: 380px;
+    margin: 10px auto 25px auto;
+}

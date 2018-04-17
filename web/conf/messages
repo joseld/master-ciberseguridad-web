@@ -1,0 +1,26 @@
+##### Login #####
+Public.login.title=Login to your account
+Public.login.email=Email
+Public.login.password=Password
+Public.login.rememberMe=Remember me
+Public.login.signIn=Login
+Public.login.forgot.title=Forgot your password?
+Public.login.forgot.description1=No worries, click
+Public.login.forgot.description2=to reset your password.
+Public.login.forgot.link=here
+Public.login.create.description=Don't have an account yet?
+Public.login.create.link=Create an account
+Public.login.error.credentials=Invalid credentials
+
+
+##### Register #####
+Public.register.title=Register
+Public.register.name=Username
+Public.register.oldPassword=Old password
+Public.register.password=New password
+Public.register.passwordCheck=Confirm new password
+Public.register.registerButton=Sign up
+Public.register.validation.name=Please enter a display name we can use to address you
+Public.register.validation.password=Please enter a password
+Public.register.validation.passwordConfirmation=Please confirm your password
+Public.register.validation.existingAccount=This account is already registered. Forgot your password?

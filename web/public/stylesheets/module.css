@@ -1,0 +1,14 @@
+html, body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-color: #353540;
+    font-family: 'Open Sans', verdana, sans-serif;
+}
+
+.login {
+    max-width: 800px;
+}

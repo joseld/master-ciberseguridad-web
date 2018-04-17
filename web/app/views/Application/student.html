@@ -1,0 +1,12 @@
+#{extends 'main2.html' /}
+#{set title:'Home' /}
+
+<br>
+Hello ${u.getUsername()}
+
+#{if u.getMark() == -1}
+    <p>Teachers haven't set up any mark yet</p>
+#{/if}
+#{else}
+    <p>Current Mark: ${u.getMark()}<p>
+#{/else}

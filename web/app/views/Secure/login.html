@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+#{set title:'Login' /}
+<h2>&{'Public.login.title'}</h2>
+
+
+#{form @authenticate()}
+    #{if flash.error}
+        <p class="error">
+            &{flash.error}
+        </p>
+    #{/if}
+    #{if flash.success}
+        <div class="text-success">
+            <label class="control-label">&{flash.success}</label>
+        </div>
+    #{/if}
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="input-icon">
+                <i class="fa fa-envelope"></i>
+                <input class="form-control" type="text" value="${flash.username}" placeholder="&{'Public.login.email'}" id="username" name="username">
+            </div>
+
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input class="form-control" type="password" placeholder="&{'Public.login.password'}" id="password" name="password">
+            </div>
+
+            <div class="form-actions">
+                <button id="login-submit" type="submit" class="btn-bezel btn-primary pull-right">
+                    <span>&{'Public.login.signIn'}</span>
+                </button>
+            </div>
+        </div>
+    </div>
+#{/form}
+<hr/>
+<div class="create-account">
+    <p>
+        &{'Public.login.create.description'}&nbsp; <a href="@{PublicContentBase.register()}">&{'Public.login.create.link'} <i class="fa fa-arrow-circle-o-right"></i></a>
+    </p>
+</div>

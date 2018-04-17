@@ -1,0 +1,14 @@
+#{extends 'main2.html' /}
+#{set title:'Home' /}
+
+<br>
+<h3>Student List</h3>
+
+#{list items:students, as:'student'}
+    #{if student.getMark() == -1}
+        <p>${student.getUsername()} - <a href="@{Application.setMark(student.getUsername())}">Set Mark</a> | <a href="@{Application.removeStudent(student.getUsername())}">Remove Student</a> </p>
+    #{/if}
+    #{else}
+        <p>${student.getUsername()} - <a href="@{Application.setMark(student.getUsername())}">Change Mark (${student.getMark()})</a> | <a href="@{Application.removeStudent(student.getUsername())}">Remove Student</a> </p>
+    #{/else}
+#{/list}
